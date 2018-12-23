@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Connector - LeMaRiva|tech</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-wifi.ico">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	<link rel="stylesheet" href="ccs/bootstrap.min.css">
+	<link rel="stylesheet" href="ccs/fa-all.css">
+	<link rel="stylesheet" type="text/css" href="ccs/styles.css">
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<div class="d-flex justify-content-end social_icon">
+                    <a href="https://lemariva.com" target="_blank"><img src="imgs/logo-text.svg"/></a>
+                </div>
+            </div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-wifi"></i></span>
+						</div>
+						<select id="ssid" class="form-control" placeholder="ssid">
+                        </select>   
+						
+					</div>
+					<div class="input-group form-group" id="show_hide_password">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+                        <input id="password" type="password" class="form-control" placeholder="password" required="true">
+                        <div class="input-group-addon">
+                                <span class="input-group-text">
+                                    <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                </span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <input type="button" value="Scan" onclick="scan_ssid()" class="btn float-left login_btn">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+                </form>
+			</div>
+			<div class="card-footer">
+				<div class="justify-content-center links">            
+                    <div class="bs-example">
+                            <div id="sucess" class="alert alert-success">
+                                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                <strong>Success!</strong> You are now connected to your network connection!
+                            </div>
+                            <div id="error" class="alert alert-danger">
+                                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                    <strong>Warning!</strong> There was a problem with your network connection. Try again!
+                            </div>
+                            <div id="error-critical" class="alert alert-danger">
+                                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                    <strong>Error!</strong> There was a problem reaching the network container. Restart the board and try again!
+                            </div>
+                    </div>
+				</div>
+				<div class="d-flex justify-content-center links">
+                    <a href="https://lemariva.com" target="_blank">lemariva.com</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
