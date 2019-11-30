@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:stretch
+FROM balenalib/raspberrypi3
 
 RUN [ "cross-build-start" ]
 
@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
   cups-client \
   cups-bsd \
   printer-driver-all \
+  printer-driver-gutenprint \
   hpijs-ppds \
   hp-ppd  \
   hplip \
