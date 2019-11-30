@@ -1,11 +1,11 @@
-FROM balenalib/raspberrypi3
+FROM balenalib/raspberry-pi-debian:buster
 
 RUN [ "cross-build-start" ]
 
 #labeling
-LABEL maintainer="lemariva@gmail.com" \
-      version="V1.0.1" \
-      description="Raspbian(stretch) with cups"
+LABEL maintainer="info@lemariva.com" \
+      version="V1.1.0" \
+      description="Raspbian (buster) with CUPS"
 
 ENV DEBIAN_FRONTEND noninteractive
 
