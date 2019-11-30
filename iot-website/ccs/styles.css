@@ -12,6 +12,7 @@ font-family: 'Numans', sans-serif;
 
 a {
     color: #FFC312;
+    margin-left: 5px;
     text-decoration: none;
     font-variant: bold;
     background-color: transparent;
@@ -26,7 +27,7 @@ align-content: center;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
-background-color: rgba(255,255,255,0.5) !important;
+background-color: rgba(255,255,255,0.9) !important;
 }
 
 .logo_icon span{
