@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y \
   hpijs-ppds \
   hp-ppd  \
   hplip \
-  printer-driver-foo2zjs
+  printer-driver-foo2zjs \
+  printer-driver-splix
 
 #RUN sed -i "s/^#\ \+\(en_US.UTF-8\)/\1/" /etc/locale.gen \
 #  && locale-gen en_US en_US.UTF-8
